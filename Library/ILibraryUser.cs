@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Library
+﻿namespace Library
 {
     public interface ILibraryUser
     {
-        void AddBook();
+        int BooksCount { get; }
+
+        void AddBook(Book book);
+        void RemoveBook(Book book);
     }
 }
